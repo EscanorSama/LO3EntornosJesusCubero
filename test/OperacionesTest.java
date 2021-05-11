@@ -42,7 +42,7 @@ public class OperacionesTest {
     /**
      * Test of sumarPar method, of class Operaciones.
      */
-    @Ignore
+    
     @Test
     public void testSumarParPar() {
         int a = 2;
@@ -52,7 +52,7 @@ public class OperacionesTest {
         assertEquals(expResult, result);
         
     }
-    @Ignore
+    
     @Test
     public void testSumarParImpar() {
         int a = 2;
@@ -99,7 +99,7 @@ public class OperacionesTest {
     /**
      * Test of sumarVector method, of class Operaciones.
      */
-    
+    @Ignore
     @Test
     public void testSumarVector() {
         int[] numeros = {2,3,4,5};

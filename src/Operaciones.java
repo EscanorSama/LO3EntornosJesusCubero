@@ -14,9 +14,9 @@ public class Operaciones {
     public int sumarPar(int a, int b) {
         int resultado = a + b;
         if(resultado%2==0){
-            return resultado+1;
-        }else{
             return resultado;
+        }else{
+            return resultado+1;
         }
     }
 

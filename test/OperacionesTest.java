@@ -43,15 +43,24 @@ public class OperacionesTest {
      * Test of sumarPar method, of class Operaciones.
      */
     @Test
-    public void testSumarPar() {
-        int a = 0;
-        int b = 0;
-        int expResult = 0;
+    public void testSumarParPar() {
+        int a = 2;
+        int b = 2;
+        int expResult = a+b;
         int result = operaciones.sumarPar(a, b);
         assertEquals(expResult, result);
         
     }
-
+    
+    @Test
+    public void testSumarParImpar() {
+        int a = 2;
+        int b = 3;
+        int expResult = a+b+1;
+        int result = operaciones.sumarPar(a, b);
+        assertEquals(expResult, result);
+        
+    }
     /**
      * Test of mayor method, of class Operaciones.
      */

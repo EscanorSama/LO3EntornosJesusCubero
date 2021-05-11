@@ -65,7 +65,7 @@ public class OperacionesTest {
     /**
      * Test of mayor method, of class Operaciones.
      */
-    
+    @Ignore
     @Test
     public void testMayorMenor() {
         int a = 3;
@@ -75,7 +75,7 @@ public class OperacionesTest {
         assertEquals(expResult, result);
         
     }
-    
+    @Ignore
     @Test
     public void testMenorMayor() {
         int a = 2;
@@ -85,7 +85,7 @@ public class OperacionesTest {
         assertEquals(expResult, result);
         
     }
-    
+    @Ignore
     @Test
     public void testIgual() {
         int a = 2;
@@ -99,7 +99,7 @@ public class OperacionesTest {
     /**
      * Test of sumarVector method, of class Operaciones.
      */
-    @Ignore
+    
     @Test
     public void testSumarVector() {
         int[] numeros = {2,3,4,5};

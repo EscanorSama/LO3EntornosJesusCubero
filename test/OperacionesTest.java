@@ -42,6 +42,7 @@ public class OperacionesTest {
     /**
      * Test of sumarPar method, of class Operaciones.
      */
+    
     @Test
     public void testSumarParPar() {
         int a = 2;
@@ -66,16 +67,33 @@ public class OperacionesTest {
      */
     @Ignore
     @Test
-    public void testMayor() {
-        System.out.println("mayor");
-        int a = 0;
-        int b = 0;
-        Operaciones instance = new Operaciones();
-        int expResult = 0;
-        int result = instance.mayor(a, b);
+    public void testMayorMenor() {
+        int a = 3;
+        int b = 2;
+        int expResult = 3;
+        int result = operaciones.mayor(a, b);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
+    }
+    @Ignore
+    @Test
+    public void testMenorMayor() {
+        int a = 2;
+        int b = 3;
+        int expResult = 3;
+        int result = operaciones.mayor(a, b);
+        assertEquals(expResult, result);
+        
+    }
+    @Ignore
+    @Test
+    public void testIgual() {
+        int a = 2;
+        int b = 2;
+        int expResult = 2;
+        int result = operaciones.mayor(a, b);
+        assertEquals(expResult, result);
+        
     }
 
     /**

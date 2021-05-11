@@ -42,7 +42,7 @@ public class OperacionesTest {
     /**
      * Test of sumarPar method, of class Operaciones.
      */
-    
+    @Ignore
     @Test
     public void testSumarParPar() {
         int a = 2;
@@ -52,7 +52,7 @@ public class OperacionesTest {
         assertEquals(expResult, result);
         
     }
-    
+    @Ignore
     @Test
     public void testSumarParImpar() {
         int a = 2;
@@ -99,17 +99,14 @@ public class OperacionesTest {
     /**
      * Test of sumarVector method, of class Operaciones.
      */
-    @Ignore
+    
     @Test
     public void testSumarVector() {
-        System.out.println("sumarVector");
-        int[] numeros = null;
-        Operaciones instance = new Operaciones();
-        int expResult = 0;
-        int result = instance.sumarVector(numeros);
+        int[] numeros = {2,3,4,5};
+        int expResult = 14;
+        int result = operaciones.sumarVector(numeros);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }

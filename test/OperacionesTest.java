@@ -14,7 +14,8 @@ import org.junit.Ignore;
 
 /**
  *
- * @author CES
+ * @author jesus
+ * @version 2.0
  */
 public class OperacionesTest {
     private static Operaciones operaciones;
@@ -23,9 +24,12 @@ public class OperacionesTest {
     }
     
     @BeforeClass
+    
     public static void setUpClass() {
         operaciones = new Operaciones();
+    
     }
+    
     
     @AfterClass
     public static void tearDownClass() {
@@ -39,10 +43,8 @@ public class OperacionesTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of sumarPar method, of class Operaciones.
-     */
-    @Ignore
+    
+    
     @Test
     public void testSumarParPar() {
         int a = 2;
@@ -50,9 +52,9 @@ public class OperacionesTest {
         int expResult = a+b;
         int result = operaciones.sumarPar(a, b);
         assertEquals(expResult, result);
-        
+   
     }
-    @Ignore
+    
     @Test
     public void testSumarParImpar() {
         int a = 2;
@@ -60,12 +62,10 @@ public class OperacionesTest {
         int expResult = a+b+1;
         int result = operaciones.sumarPar(a, b);
         assertEquals(expResult, result);
-        
+       
     }
-    /**
-     * Test of mayor method, of class Operaciones.
-     */
-    @Ignore
+    
+    
     @Test
     public void testMayorMenor() {
         int a = 3;
@@ -75,7 +75,7 @@ public class OperacionesTest {
         assertEquals(expResult, result);
         
     }
-    @Ignore
+    
     @Test
     public void testMenorMayor() {
         int a = 2;
@@ -83,9 +83,9 @@ public class OperacionesTest {
         int expResult = b;
         int result = operaciones.mayor(a, b);
         assertEquals(expResult, result);
-        
+         
     }
-    @Ignore
+    
     @Test
     public void testIgual() {
         int a = 2;
@@ -93,12 +93,10 @@ public class OperacionesTest {
         int expResult = b;
         int result = operaciones.mayor(a, b);
         assertEquals(expResult, result);
-        
+          
     }
 
-    /**
-     * Test of sumarVector method, of class Operaciones.
-     */
+    
     
     @Test
     public void testSumarVector() {
@@ -106,7 +104,7 @@ public class OperacionesTest {
         int expResult = 14;
         int result = operaciones.sumarVector(numeros);
         assertEquals(expResult, result);
-        
+       
     }
     
 }
